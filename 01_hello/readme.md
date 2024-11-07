@@ -44,7 +44,7 @@ sui --version
 
 输出
 ```shell 
-sui 1.26.0
+sui 1.36.2-homebrew
 ```
 
 
@@ -69,6 +69,12 @@ sui client addresses
 获取测试SUI
 ```shell
 sui client faucet 
+```
+
+
+查看是否获取成功
+```shell
+sui client gas 
 ```
 
 给指定地址获取SUI

@@ -1,6 +1,6 @@
 module hello_move::hello ;
 
-use std::ascii::{String, string};
+use std::ascii::{String};
 use sui::object::{Self, UID};
 use sui::transfer::transfer;
 use sui::tx_context::{TxContext};
