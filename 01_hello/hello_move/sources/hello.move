@@ -1,9 +1,7 @@
 module hello_move::hello ;
 
-use std::ascii::{String};
-use sui::object::{Self, UID};
+use std::ascii::{String, string};
 use sui::transfer::transfer;
-use sui::tx_context::{TxContext};
 
 public struct Hello has key {
     id: UID,
@@ -13,7 +11,7 @@ public struct Hello has key {
 fun init(ctx: &mut TxContext) {
     let hello_move = Hello {
         id: object::new(ctx),
-        say: string(b"move"),
+        say: string(b"move your github id"),
     };
     transfer(hello_move, ctx.sender());
 }
