@@ -12,7 +12,7 @@
 module comment::comment {
 
     // this is comment
-    use sui::tx_context::TxContext;
+    
 
     /// this is docs comment
     fun init(ctx: &mut TxContext) {
@@ -27,6 +27,10 @@ module comment::comment {
 
 }
 
+```
+如何生成文档
+```shell
+ sui move build  --doc
 ```
 
 

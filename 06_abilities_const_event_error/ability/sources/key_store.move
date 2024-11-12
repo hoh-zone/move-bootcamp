@@ -2,8 +2,8 @@ module ability::key_store ;
 
 use sui::object;
 use sui::object::UID;
-use sui::transfer::{transfer, public_transfer};
-use sui::tx_context::{sender, TxContext};
+use sui::transfer::{public_transfer};
+use sui::tx_context::{sender};
 
 public struct KeyStore has key, store {
     id: UID,

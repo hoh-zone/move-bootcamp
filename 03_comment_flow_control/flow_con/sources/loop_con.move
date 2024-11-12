@@ -1,7 +1,6 @@
 module flow_con::loop_con ;
 
 use std::debug::print;
-use sui::tx_context::TxContext;
 
 fun init(_ctx: &mut TxContext) {
     let b = sum(10);

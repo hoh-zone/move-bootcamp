@@ -1,8 +1,4 @@
 module flow_con::if_con ;
-
-
-use sui::tx_context::TxContext;
-
 fun init(ctx: &mut TxContext) {
     let mut x: u32 = 10;
     if (x > 5)  x = x - 5;

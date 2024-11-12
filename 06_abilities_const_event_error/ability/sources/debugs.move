@@ -1,7 +1,5 @@
 module ability::debugs ;
 
-use std::debug::print;
-
 public struct People has drop {
     age: u8,
 }

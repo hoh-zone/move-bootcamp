@@ -1,6 +1,6 @@
 module obj::struct_code ;
 
-use sui::tx_context::TxContext;
+
 
 public struct Person {
     age: u8,

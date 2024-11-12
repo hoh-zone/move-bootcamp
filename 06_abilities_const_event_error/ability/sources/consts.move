@@ -1,6 +1,5 @@
 module ability::consts ;
 
-use std::string::String;
 use sui::object;
 use sui::object::UID;
 use sui::transfer::freeze_object;

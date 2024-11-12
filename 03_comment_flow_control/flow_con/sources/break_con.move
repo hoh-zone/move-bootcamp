@@ -1,7 +1,6 @@
 module flow_con::break_con ;
 
 use std::debug::print;
-use sui::tx_context::TxContext;
 
 fun init(_ctx: &mut TxContext) {
     let b = min_factor(10);
