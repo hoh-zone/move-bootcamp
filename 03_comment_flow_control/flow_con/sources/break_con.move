@@ -11,10 +11,10 @@ fun min_factor(n: u64): u64 {
     let mut i = 2;
 
     while (i <= n) {
-        if (n % i == 0) break ;
+        if (n % i == 0) break ; // 1
         i = i + 1
     };
-
+    // 2
     i
 }
 

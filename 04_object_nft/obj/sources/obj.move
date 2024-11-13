@@ -12,6 +12,11 @@ public struct Person {
     height: u16
 }
 
+public struct MyObject has key{
+    id: sui::object::UID,
+}
+
+
 public struct PersonObject has key {
     id: UID,
     age: u8,

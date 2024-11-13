@@ -11,6 +11,12 @@ fun sum(n: u64): u64 {
     let mut sum = 0;
     let mut i = 0;
 
+
+    // while (true){
+    //     i = i + 1;
+    //     if (i > n) break;
+    //     sum = sum + i
+    // };
     loop {
         i = i + 1;
         if (i > n) break;

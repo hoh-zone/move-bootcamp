@@ -1,6 +1,11 @@
 module obj::struct_code ;
+use std::string::String;
 
 
+public struct A{
+    b:String,
+    c: u64
+}
 
 public struct Person {
     age: u8,

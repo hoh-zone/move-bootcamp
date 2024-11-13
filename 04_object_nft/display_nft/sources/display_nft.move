@@ -1,6 +1,7 @@
 module display_nft::display_nft ;
-    use sui::tx_context::{sender};
-    use std::string::{utf8, String};
+use std::string;
+use sui::tx_context::{sender};
+use std::string::{utf8, String};
 
 
     use sui::package;
@@ -44,6 +45,15 @@ module display_nft::display_nft ;
 
         transfer::public_transfer(publisher, sender(ctx));
         transfer::public_transfer(display, sender(ctx));
+
+
+        let nft = MyNFT{
+            id:object::new(ctx),
+            name:string::utf8(b"uvd display nft 2"),
+            image_url:string::utf8(b"https://img2.baidu.com/it/u=883245903,2894896770&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=889"),
+        };
+        transfer::public_transfer(nft, sender(ctx));
+
     }
 
 
