@@ -5,6 +5,16 @@ use sui::object::UID;
 use sui::transfer::transfer;
 use sui::tx_context::sender;
 
+// public struct NoStore  {
+//     num: u8,
+// }
+//
+// public struct MyStructHold2 has key {
+//     id: UID,
+//     no_struct: NoStore
+// }
+
+
 public struct Store has store {
     num: u8,
 }

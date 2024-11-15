@@ -9,8 +9,19 @@ fun init(_: &mut TxContext) {
     let not = NotAny {
         age: 10
     };
+
+
+    let not =  handle(not);
+
     delete(not);
     //let NotAny{age} = not;
+}
+
+
+public fun handle(not: NotAny) :NotAny{
+    //// xxx
+    ///
+    not
 }
 
 

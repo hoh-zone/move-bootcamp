@@ -6,7 +6,7 @@ public struct Event1 has copy, drop {
     age: u8,
 }
 
-fun init(ctx: &mut TxContext) {
+fun init(_: &mut TxContext) {
     let eve = Event1 {
         age: 10,
     };

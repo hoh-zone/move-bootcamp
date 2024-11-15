@@ -4,16 +4,17 @@ const ErrMustGet10: u64 = 0x1;
 const ErrMustLt11: u64 = 0xa;
 
 
+
 fun init(ctx: &mut TxContext) {
-    let num2 = input(11);
-    let num1 = input(5);
+    // let num2 = input(11);
+    // let num1 = input(5);
 }
 
 public fun input(num: u32): u32 {
     if (num > 10) {
         num
     }else {
-        abort 0
+        abort ErrMustGet10
     }
 }
 
