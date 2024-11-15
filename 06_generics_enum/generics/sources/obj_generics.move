@@ -1,5 +1,4 @@
 module generics::obj_generics ;
-use sui::object;
 use sui::object::UID;
 
 public struct Box32 {
@@ -18,20 +17,29 @@ public struct Box128 {
     value: u128
 }
 
+// public struct Box512 {
+//     value: u512
+// }
 
-public struct Box<T> {
+// 泛型的第一个作用就是 消除模板代码
+// 泛型的第二个作用就是 兼容未来的数据类型
+
+
+
+public struct Box <T> {
     value: T
 }
 
 
-public struct Box2<T, Z> {
+public struct Box2 <T, Z> {
     value: T,
     value2: Z,
     value_3: Z,
 }
 
 
-public struct Box3<T: store + drop> has key, store {
+
+public struct Box3<T: store + drop>  has key, store {
     id: UID,
     value: T
 }
@@ -47,14 +55,25 @@ public struct Box4<T: store + drop> has key, store {
 }
 
 
-fun init(ctx: &mut TxContext) {
+fun init(_: &mut TxContext) {
     let boxu32_1 = Box32 {
         value: 32u32
     };
 
+
+
     let boxu32_2 = Box<u32> {
         value: 11u32,
     };
+
+    let box64_3 = Box {
+        value: 32u32,
+    };
+
+    // let box64_3 = Box<u512> {
+    //     value: 32u512,
+    // };
+
 
 
     // let box2_1 = Box2<u16,u32>{

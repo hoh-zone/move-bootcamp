@@ -1,5 +1,5 @@
 ## 资料
-- [PPT](https://docs.google.com/presentation/d/1mTSYySPi0fClm7_RRryrEC4pkrb8gip-z6ziJxP8Hwc)
+- [PPT](https://docs.google.com/presentation/d/1xWPSAP_0VBd59jaKPzKQXbIPFcd95yKzN5IzrwXgjCQ)
 
 
 # Generics 范型

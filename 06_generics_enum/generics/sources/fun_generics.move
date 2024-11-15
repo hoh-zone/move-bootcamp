@@ -4,11 +4,12 @@ public struct Box<T> {
     value: T
 }
 
+public fun input1(value: u64) {}
 
-public fun input<T: drop>(value: T) {}
+public fun input <T: drop + copy> (value: T) {}
 
 
-public fun create_box<T>(value: T): Box<T> {
+public fun create_box <T> (value: T): Box<T> {
     Box<T> { value }
 }
 

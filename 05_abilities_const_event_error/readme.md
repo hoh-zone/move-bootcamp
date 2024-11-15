@@ -1,5 +1,5 @@
 # 资源
-- [PPT](https://docs.google.com/presentation/d/1hBt0vHHURy_Lu5QiTKBMVHCj5S4QVif-SgXU4DhUu6I)
+- [PPT](https://docs.google.com/presentation/d/1KNidkZ6SmDe9AKzZ1bM0gLbaeFWSoergFPaS9o49yjo)
 
 # ability
 
