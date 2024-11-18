@@ -5,7 +5,7 @@ fun init(_: &mut TxContext) {}
 
 fun a() {}
 
-fun aa(){
+fun aa() {
     let a: u64;
     a = 10;
     a();
@@ -24,17 +24,16 @@ entry fun dd() {}
 entry fun dc() {}
 
 
-
 public fun f(a: u32, b: u32): bool {
     a > b
 }
 
 public fun max(a: u32, b: u32): u32 {
-   if (a > b) {
-       a
-   }else {
-       b
-   }
+    if (a > b) {
+        a
+    }else {
+        b
+    }
 }
 
 

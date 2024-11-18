@@ -1,4 +1,2 @@
-module move2024::move2024 {
-
-}
+module move2024::move2024 {}
 

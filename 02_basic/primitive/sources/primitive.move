@@ -4,9 +4,9 @@ module primitive::primitive ;
 fun init(_: &mut TxContext) {
     let int_8 = 8u8;
 
-    let int2_8 : u8 = 8;
-    let int3_8  = 8u8;
-    let int2_8  = 8;
+    let int2_8: u8 = 8;
+    let int3_8 = 8u8;
+    let int2_8 = 8;
 
     let int_16 = 16u16;
     let int_32 = 32u32;
@@ -44,7 +44,7 @@ fun init(_: &mut TxContext) {
 
     let addr: address = @0x1;
 
-    let addr: address =@0x1;
+    let addr: address = @0x1;
     let addr2 = @0x2;
 
     let address1 = @0x1; // shorthand for 0x0000000000000000000000000000000000000000000000000000000000000001

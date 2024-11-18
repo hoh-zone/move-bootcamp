@@ -4,18 +4,16 @@ module move2024::match_keyworld {
         match (x) {
             1 => 2,
             2 => 3,
-            x => x,
+                x => x,
         }
     }
 
 
     #[test]
-    fun test_run(){
+    fun test_run() {
         run(1); // 返回 2
         run(2); // 返回 3
         run(3); // 返回 3
         run(0); // 返回 0
     }
-
-
 }

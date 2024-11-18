@@ -49,7 +49,7 @@ module display_nft::display_nft {
 
     public entry fun mint(name: String, image_url: String, ctx: &mut TxContext) {
         let id = object::new(ctx);
-        let nft =  MyNFT { id, name, image_url };
+        let nft = MyNFT { id, name, image_url };
         transfer::public_transfer(nft, sender(ctx));
     }
 }

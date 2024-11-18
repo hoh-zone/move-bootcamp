@@ -1,17 +1,6 @@
 module flash_lender::flash_lender {
     use sui::coin::{Self, Coin};
     use sui::balance::Balance;
-    #[test_only]
-    use std::vector::swap;
-    #[test_only]
-    use sui::object;
-    #[test_only]
-    use sui::test_scenario;
-    #[test_only]
-    use sui::test_scenario::sender;
-    #[test_only]
-    use sui::transfer::public_transfer;
-
 
     public struct FlashLender<phantom T> has key {
         id: UID,

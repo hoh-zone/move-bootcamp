@@ -1,6 +1,5 @@
-module design::item ;
+module design::cap ;
 use std::string::String;
-
 
 public struct AdminCap has key { id: UID }
 

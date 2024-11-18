@@ -8,16 +8,15 @@ module test_demo::test_demo_tests {
 
     #[test]
     fun test_init() {
-
         let my_address = @0x88888;
         let my_address = @0x111111;
 
-        let  mut scenario =    begin(my_address);
+        let mut scenario = begin(my_address);
         let my_ctx = ctx(&mut scenario);
         test_for_init(my_ctx);
 
         // 模拟钱包签名发到链 但是真实的是发到内存里面
-      // let transaction_effects =   next_tx(&mut scenario, my_address);
+        // let transaction_effects =   next_tx(&mut scenario, my_address);
 
         end(scenario);
     }

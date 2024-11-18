@@ -8,9 +8,6 @@ module move2024::aliases {
     //
     fun aliases() {
         let ascii_str = ascii::string(b"uvd");
-        let abc: String =  ascii_str.to_string();
+        let abc: String = ascii_str.to_string();
     }
-
-
-
 }

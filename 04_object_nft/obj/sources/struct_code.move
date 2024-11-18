@@ -2,8 +2,8 @@ module obj::struct_code ;
 use std::string::String;
 
 
-public struct A{
-    b:String,
+public struct A {
+    b: String,
     c: u64
 }
 

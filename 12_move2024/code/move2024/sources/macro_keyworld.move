@@ -7,7 +7,9 @@ module move2024::macro_keyworld {
     //
     // }
 
-    public macro fun num_max($x: _, $y: _): _ {
+    public macro
+
+    fun num_max($x: _, $y: _): _ {
         let x = $x;
         let y = $y;
         if (x > y) x
@@ -15,16 +17,12 @@ module move2024::macro_keyworld {
     }
 
     #[test]
-    fun test_max(){
+    fun test_max() {
+        // let a =   max<u16>(10,20);
 
-     // let a =   max<u16>(10,20);
 
-
-        let z = num_max!(10u32,20u32);
+        let z = num_max!(10u32, 20u32);
         //
         // print(&z);
-
     }
-
-
 }

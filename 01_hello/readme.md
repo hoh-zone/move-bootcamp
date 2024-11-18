@@ -1,16 +1,19 @@
 ## 学习资源
--  [PPT](https://docs.google.com/presentation/d/13YTgaZo1RNHmaAK2ZMCXTheDDi154l9pHR1X03BSRzk) 
--  [什么是Move](https://mp.weixin.qq.com/s/MEZXP8l8x67lBDZWQsgg8g)
--  [什么是智能合约](https://mp.weixin.qq.com/s/5yQuNUsa0lt-krJint_lkw)
--  [钱包和区块链浏览器](https://mp.weixin.qq.com/s/9Zc2u5l8c1LiatNNEkN_Ow)
+
+- [PPT](https://docs.google.com/presentation/d/13YTgaZo1RNHmaAK2ZMCXTheDDi154l9pHR1X03BSRzk)
+- [什么是Move](https://mp.weixin.qq.com/s/MEZXP8l8x67lBDZWQsgg8g)
+- [什么是智能合约](https://mp.weixin.qq.com/s/5yQuNUsa0lt-krJint_lkw)
+- [钱包和区块链浏览器](https://mp.weixin.qq.com/s/9Zc2u5l8c1LiatNNEkN_Ow)
 
 # 运行前提
 
 ## 安装好Sui Cli （move编译器）
--  [sui安装文档](https://docs.sui.io/guides/developer/getting-started/sui-install)
--  [预编译的下载包](https://github.com/MystenLabs/sui/releases)
+
+- [sui安装文档](https://docs.sui.io/guides/developer/getting-started/sui-install)
+- [预编译的下载包](https://github.com/MystenLabs/sui/releases)
 
 ### MacOS 包工具安装
+
 * [安装brew](https://brew.sh/)
 
 ```shell
@@ -18,19 +21,23 @@ brew install sui
 ```
 
 ### Windows 包工具安装
+
 * [安装 choco](https://chocolatey.org/)
 
 ```shell
 choco install sui
 ```
 
-
 ### docker 方式的安装
+
 pull 镜像  `devnet` 可以换成 `testnet` `mainnet`
+
 ```shell
   docker pull mysten/sui-tools:devnet
 ``` 
+
 运行镜像
+
 ```shell
   docker run --name suidevcontainer -itd mysten/sui-tools:devnet
 
@@ -38,46 +45,52 @@ pull 镜像  `devnet` 可以换成 `testnet` `mainnet`
 ```    
 
 ## 如何验证自己是否安装好
+
 ```shell
 sui --version
 ```
 
 输出
+
 ```shell 
 sui 1.36.2-homebrew
 ```
 
-
 ## 安装Sui钱包
+
 * [Sui Wallet](https://chrome.google.com/webstore/detail/opcgpfmipidbgpenhmajoajpbobppdil)  |    [教程-如何开始使用Sui钱包](https://mp.weixin.qq.com/s/-_hCFUO-62hv9amPzmJdeg)
 * [Suiet Wallet](https://chrome.google.com/webstore/detail/suiet-sui-wallet/khpkpbbcccdmmclmpigdgddabeilkdpd)   |  [教程-如何获取Suiet钱包](https://suiet.app/blog/what-is-suiet-sui-wallet-how-to-use-sui-wallet)
 * [surf](https://surf.tech)
 
 ## 熟悉区块链浏览器
+
 - https://suiscan.xyz/
 - https://suivision.xyz/
 
 ## 获取测试网 SUI
--  [水龙头2](https://docs.sui.io/guides/developer/getting-started/get-coins)
+
+- [水龙头2](https://docs.sui.io/guides/developer/getting-started/get-coins)
 
 查看当前地址
+
 ```shell
 sui client addresses 
 ```
 
-
 获取测试SUI
+
 ```shell
 sui client faucet 
 ```
 
-
 查看是否获取成功
+
 ```shell
 sui client gas 
 ```
 
 给指定地址获取SUI
+
 ```shell
 
 curl --location --request POST 'https://faucet.testnet.sui.io/gas' \
@@ -88,7 +101,6 @@ curl --location --request POST 'https://faucet.testnet.sui.io/gas' \
     }
 }'
 ```
-
 
 ### 创建项目
 
@@ -118,14 +130,14 @@ fun init(ctx: &mut TxContext) {
 }
 ```
 
-
 ### 发布上链
+
 ```shell
 sui client publish 
 ```
 
+### hello dapp
 
-### hello dapp 
 https://sdk.mystenlabs.com/dapp-kit/create-dapp
 
 ```shell
@@ -133,6 +145,7 @@ npm create @mysten/dapp@0.3.10
 ```
 
 # 提交作业 hello move的作业  20人民币等值SUI的奖励
+
 - [let's move](https://github.com/move-cn/letsmove) 
 
 

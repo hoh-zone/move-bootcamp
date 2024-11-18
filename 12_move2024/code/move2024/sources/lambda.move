@@ -2,10 +2,10 @@ module move2024::lambda {
     use std::debug::print;
 
 
-    macro fun op( $f: |u64, u64| -> u64,
+    macro fun op($f: |u64, u64| -> u64,
                  $x: u64, $y: u64): u64 {
-        $f($x, $y)
-    }
+    $f($x, $y)
+}
 
 
     #[test]

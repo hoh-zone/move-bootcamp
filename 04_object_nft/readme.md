@@ -1,4 +1,5 @@
 #
+
 - (PPT)[https://docs.google.com/presentation/d/1EeUATHN6ijIgMuBNbe8B6-E0BBLaJlE13h6Lggz1FGk]
 
 # struct
@@ -8,8 +9,6 @@
 ```
 
 # object
-
-
 
 # display
 

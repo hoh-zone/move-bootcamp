@@ -1,7 +1,7 @@
 module move2024::vec {
 
     fun play_vec() {
-        let v = vector[1,2,3,4];
+        let v = vector[1, 2, 3, 4];
         let first = &v[0];         // 调用 vector::borrow(v, 0)
         let first_copy = v[0];     // 调用 *vector::borrow(v, 0)
     }

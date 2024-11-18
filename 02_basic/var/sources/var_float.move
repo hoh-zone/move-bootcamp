@@ -10,8 +10,6 @@ fun init(_: &mut TxContext) {
     let c = 100_000_000u32;
 
     let d = c * a / b;
-
-
 }
 
 

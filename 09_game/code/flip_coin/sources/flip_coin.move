@@ -37,8 +37,8 @@ module flip_coin::flip_coin {
     }
 
 
-     entry fun play(game: &mut Game, flip_value: bool, in: Coin<SUI>, rand: &Random,
-                          ctx: &mut TxContext) {
+    entry fun play(game: &mut Game, flip_value: bool, in: Coin<SUI>, rand: &Random,
+                   ctx: &mut TxContext) {
         let coin_value = coin::value(&in);
 
         let play_address = sender(ctx);
