@@ -4,9 +4,12 @@ use sui::coin;
 public struct USDC has drop {}
 // 只有一个实例
 // address::模块名::结构体
+//  0x2::sui::SUI
 
 // let witness = USDC{}
 fun init(witness:USDC, ctx: &mut TxContext) {
+
+
     let (treasury, metadata) = coin::create_currency(
         witness,
         6, // decimals
